@@ -67,6 +67,17 @@ header .logo-area img {
     box-shadow: 0 0 5px pink;
 }
 
+header .li-redes-sociais a{
+    height: 100%;
+    padding: 10px;
+    background-color: #ff2d7a;
+    transition: background-color .4s;
+}
+
+header .li-redes-sociais a:hover{
+    background-color: rgb(9, 9, 159);
+}
+
 main {
     width: 100%;
     height: 100%;
@@ -146,8 +157,17 @@ main .ul-redes-sociais {
     height: 60px;
 }
 
-main .li-redes-sociais {
+main .li-redes-sociais{
+    height: 100%;
+}
+
+main .li-redes-sociais a{
     height: 100%;
     padding: 0 10px;
     background-color: rgb(9, 9, 159);
+    transition: background-color .4s;
+}
+
+main .li-redes-sociais a:hover{
+    background-color: #ff2d7a;
 }
