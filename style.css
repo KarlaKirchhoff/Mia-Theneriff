@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Urban';
+    src: url(UrbanJungleDEMO.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.df-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-ul-redes-sociais {
+    height: 30px;
+}
+
+.ul-redes-sociais {
+    gap: 20px;
+}
+
+.li-redes-sociais p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15% auto;
+    background-image: url("img/paisagem-gta-backgroud.jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+header {
+    height: 100%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+header .logo-area h1 {
+    color: #fde579;
+}
+
+header .logo-area img {
+    height: 40px;
+    box-shadow: 0 0 5px pink;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: 70% auto;
+    gap: 30px;
+    overflow: hidden;
+}
+
+main .banner {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60% auto;
+    border: 4px solid white;
+}
+
+main .banner-text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+main .banner-text-area h1 {
+    font-family: 'Urban', sans-serif;
+    font-size: 90px;
+    letter-spacing: 4px;
+    color: #ff2d7a;
+    color: #fe90b9;
+    text-shadow: 0 0 25px #ff002b,
+        0 0 20px #ff2d7a,
+        0 0 5px white,
+        0 0 5px white;
+}
+
+main .banner-text-area a {
+    width: 80%;
+    padding: 8px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: greenyellow;
+    background-color: #ff002b;
+    transition: color .4s;
+    transition: background-color .4s;
+}
+
+main .banner-text-area a:hover {
+    cursor: pointer;
+    color: #ff002b;
+    background-color: greenyellow;
+}
+
+main .banner .banner-img-area {
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    overflow: hidden;
+}
+
+main .banner .banner-img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main .redes-sociais {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .ul-redes-sociais {
+    height: 60px;
+}
+
+main .li-redes-sociais {
+    height: 100%;
+    padding: 0 10px;
+    background-color: rgb(9, 9, 159);
+}
