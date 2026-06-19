@@ -67,14 +67,14 @@ header .logo-area img {
     box-shadow: 0 0 5px pink;
 }
 
-header .li-redes-sociais a{
+header .li-redes-sociais a {
     height: 100%;
     padding: 10px;
     background-color: #ff2d7a;
     transition: background-color .4s;
 }
 
-header .li-redes-sociais a:hover{
+header .li-redes-sociais a:hover {
     background-color: rgb(9, 9, 159);
 }
 
@@ -97,6 +97,7 @@ main .banner {
 }
 
 main .banner-text-area {
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,10 +105,9 @@ main .banner-text-area {
     gap: 10px;
 }
 
-main .banner-text-area h1 {
+main .banner-text-area h1,
+main .banner-text-area h1 * {
     font-family: 'Urban', sans-serif;
-    font-size: 90px;
-    letter-spacing: 4px;
     color: #ff2d7a;
     color: #fe90b9;
     text-shadow: 0 0 25px #ff002b,
@@ -116,8 +116,14 @@ main .banner-text-area h1 {
         0 0 5px white;
 }
 
+main .banner-text-area h1 {
+    font-size: 90px;
+    letter-spacing: 4px;
+}
+
 main .banner-text-area a {
-    width: 80%;
+    width: 100%;
+    max-width: 630px;
     padding: 8px;
     font-size: 30px;
     text-align: center;
@@ -153,21 +159,316 @@ main .redes-sociais {
     justify-content: center;
 }
 
-main .ul-redes-sociais {
+main .redes-sociais .ul-redes-sociais {
     height: 60px;
 }
 
-main .li-redes-sociais{
+main .redes-sociais .li-redes-sociais {
     height: 100%;
 }
 
-main .li-redes-sociais a{
+main .redes-sociais .li-redes-sociais a {
     height: 100%;
     padding: 0 10px;
     background-color: rgb(9, 9, 159);
     transition: background-color .4s;
 }
 
-main .li-redes-sociais a:hover{
+main .li-redes-sociais a:hover {
     background-color: #ff2d7a;
+}
+
+@media screen and (max-width: 1204px) {
+    main .banner-text-area h1 {
+        font-size: 80px;
+    }
+
+    main .banner-text-area a {
+        max-width: 580px;
+    }
+}
+
+@media screen and (max-width: 1102px) {
+    main .banner-text-area h1 {
+        font-size: 70px;
+    }
+
+    main .banner-text-area a {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 872px) {
+    main .banner .banner-img-area {
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main .banner-text-area h1 {
+        font-size: 60px;
+    }
+
+    main .banner-text-area a {
+        max-width: 400px;
+        font-size: 25px;
+    }
+
+    main .banner .banner-img-area {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .li-redes-sociais p {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    #app {
+        grid-template-rows: 13% auto;
+    }
+
+    header {
+        padding: 0 8%;
+    }
+
+    header .logo-area h1 {
+        font-size: 20px;
+    }
+
+    header .li-redes-sociais a {
+        padding: 5px 10px;
+    }
+
+    main {
+        grid-template-rows: 80% auto;
+    }
+
+}
+
+@media screen and (max-width: 687px) {
+    main .banner-text-area {
+        padding-right: 10px;
+    }
+
+    main .banner-text-area h1 {
+        font-size: 50px;
+    }
+
+    main .banner-text-area a {
+        font-size: 20px;
+    }
+
+    main .banner .banner-img-area {
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    main .banner-text-area {
+        padding: 20px;
+        padding-right: 10px;
+    }
+
+    main .banner .banner-img-area {
+        padding: 20px;
+        padding-left: 10px;
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+    main .banner-text-area h1 {
+        line-height: 0.8;
+        margin-bottom: 10px;
+    }
+
+    main .banner-text-area h1 span {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    header .li-redes-sociais a p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    main {
+        grid-template-rows: 70% auto;
+        gap: 0;
+    }
+
+    main .banner-text-area h1 {
+        line-height: 0.7;
+        margin-bottom: 10px;
+    }
+
+    main .banner-text-area h1 span {
+        font-size: 35px;
+    }
+
+    main .redes-sociais {
+        align-items: end;
+    }
+
+    main .li-redes-sociais a {
+        padding: 10px;
+        background-color: rgb(9, 9, 159);
+    }
+}
+
+@media screen and (max-width: 430px) {
+    main {
+        grid-template-rows: 80% auto;
+        gap: 0;
+    }
+
+    main .banner {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% auto;
+    }
+
+    main .banner-text-area {
+        padding: 20px;
+        padding-bottom: 0;
+        justify-content: start;
+    }
+
+    main .banner-text-area h1,
+    main .banner-text-area h1 span {
+        margin-bottom: 0;
+        font-size: 45px;
+        line-height: normal;
+    }
+
+    main .banner .banner-img-area {
+        padding: 20px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 396px) {
+    header .ul-redes-sociais {
+        gap: 10px;
+    }
+
+    header .li-redes-sociais .img-ul-redes-sociais {
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    #app {
+        grid-template-rows: 10% auto;
+    }
+
+    header .logo-area {
+        gap: 5px;
+    }
+
+    header .logo-area img {
+        height: 30px;
+    }
+
+    main .banner {
+        grid-template-rows: 45% auto;
+    }
+
+    main .banner-text-area h1,
+    main .banner-text-area h1 span {
+        font-size: 40px;
+    }
+
+    main .banner-text-area a {
+        font-size: 18px;
+    }
+
+    main .ul-redes-sociais {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main .ul-redes-sociais .li-redes-sociais,
+    main .ul-redes-sociais .li-redes-sociais a {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header .logo-area {
+        margin-right: 10px;
+    }
+
+    header .logo-area img {
+        height: 32px;
+    }
+
+    header .logo-area h1 {
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    main .banner-text-area h1 {
+        line-height: .8;
+    }
+
+    main .banner-text-area h1 span {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    main .banner {
+        grid-template-rows: 42% auto;
+    }
+
+    main .redes-sociais .ul-redes-sociais {
+        gap: 10px;
+    }
+
+    main .redes-sociais .li-redes-sociais a {
+        gap: 5px;
+    }
+
+    main .redes-sociais .li-redes-sociais img {
+        height: 25px;
+    }
+}
+
+@media screen and (max-width: 275px) {
+    main {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 255px) {
+
+    header .logo-area img {
+        display: none;
+    }
+
+    main .redes-sociais .ul-redes-sociais,
+    main .redes-sociais .ul-redes-sociais .li-redes-sociais {
+        justify-content: center;
+    }
+
+    main .redes-sociais .ul-redes-sociais {
+        gap: 20px;
+    }
+
+    main .redes-sociais .li-redes-sociais a {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    main .redes-sociais .li-redes-sociais a p {
+        display: none;
+    }
 }
